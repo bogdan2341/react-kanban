@@ -1,4 +1,4 @@
-import { Draggable } from 'react-beautiful-dnd'
+import { Draggable } from '@ninternal/react-beautiful-dnd'
 
 function Card({ children, index, renderCard, disableCardDrag }) {
   return (

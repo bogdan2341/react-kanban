@@ -1,4 +1,4 @@
-import { Droppable } from 'react-beautiful-dnd'
+import { Droppable } from '@ninternal/react-beautiful-dnd'
 
 function withDroppable(Component) {
   return function WrapperComponent({ children, ...droppableProps }) {

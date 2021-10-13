@@ -1,5 +1,5 @@
 import { forwardRef, useState } from 'react'
-import { DragDropContext } from 'react-beautiful-dnd'
+import { DragDropContext } from '@ninternal/react-beautiful-dnd'
 import Column from './components/Column'
 import ColumnAdder from './components/ColumnAdder'
 import withDroppable from '../withDroppable'

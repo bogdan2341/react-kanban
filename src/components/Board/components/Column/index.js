@@ -1,5 +1,5 @@
 import { forwardRef } from 'react'
-import { Draggable } from 'react-beautiful-dnd'
+import { Draggable } from '@ninternal/react-beautiful-dnd'
 import Card from './components/Card'
 import withDroppable from '../../../withDroppable'
 import CardAdder from './components/CardAdder'
