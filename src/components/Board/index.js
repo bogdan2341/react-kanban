@@ -44,6 +44,8 @@ function UncontrolledBoard({
   disableColumnDrag,
   allowAddCard,
   onNewCardConfirm,
+  isVerticalAutoScrollDisabled,
+  isHorizontalAutoScrollDisabled,
 }) {
   const [board, setBoard] = useState(initialBoard)
   const handleOnCardDragEnd = partialRight(handleOnDragEnd, { moveCallback: moveCard, notifyCallback: onCardDragEnd })
@@ -141,6 +143,8 @@ function UncontrolledBoard({
       disableCardDrag={disableCardDrag}
       onCardNew={(column, card) => handleDraftCardAdd(column, card, allowAddCard)}
       allowAddCard={allowAddCard && onNewCardConfirm}
+      isVerticalAutoScrollDisabled={isVerticalAutoScrollDisabled}
+      isHorizontalAutoScrollDisabled={isHorizontalAutoScrollDisabled}
     >
       {board}
     </BoardContainer>
@@ -218,6 +222,8 @@ function BoardContainer({
   onCardDragEnd,
   onCardNew,
   allowAddCard,
+  isVerticalAutoScrollDisabled,
+  isHorizontalAutoScrollDisabled,
 }) {
   function handleOnDragEnd(event) {
     const coordinates = getCoordinates(event, board)
@@ -231,7 +237,11 @@ function BoardContainer({
   }
 
   return (
-    <DragDropContext onDragEnd={handleOnDragEnd}>
+    <DragDropContext
+      onDragEnd={handleOnDragEnd}
+      isVerticalAutoScrollDisabled={isVerticalAutoScrollDisabled}
+      isHorizontalAutoScrollDisabled={isHorizontalAutoScrollDisabled}
+    >
       <div style={{ overflowY: 'hidden', display: 'flex', alignItems: 'flex-start' }} className='react-kanban-board'>
         <DroppableBoard droppableId='board-droppable' direction='horizontal' type='BOARD'>
           {board.columns.map((column, index) => (
