@@ -1,14 +1,14 @@
 {
   "name": "@ninternal/react-kanban",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Yet another Kanban/Trello board lib for React.",
   "main": "dist/index.js",
   "files": [
     "dist/index.js",
     "dist/styles.css"
   ],
-  "repository": "https://github.com/asseinfo/react-kanban",
-  "author": "Leandro Lourenci",
+  "repository": "https://github.com/bogdan2341/react-kanban",
+  "author": "bogdan2341",
   "license": "MIT",
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0",
@@ -77,6 +77,6 @@
     "dev": "cross-env NODE_ENV=cypress start-test server 8080 'cypress open'"
   },
   "dependencies": {
-    "@ninternal/react-beautiful-dnd": "^13.1.1"
+    "@ninternal/react-beautiful-dnd": "^13.1.2"
   }
 }
