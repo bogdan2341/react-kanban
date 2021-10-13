@@ -168,6 +168,8 @@ function ControlledBoard({
   onCardRemove,
   disableCardDrag,
   disableColumnDrag,
+  isVerticalAutoScrollDisabled,
+  isHorizontalAutoScrollDisabled,
 }) {
   const handleOnCardDragEnd = partialRight(handleOnDragEnd, { notifyCallback: onCardDragEnd })
   const handleOnColumnDragEnd = partialRight(handleOnDragEnd, { notifyCallback: onColumnDragEnd })
@@ -201,6 +203,8 @@ function ControlledBoard({
       onColumnRename={onColumnRename}
       disableColumnDrag={disableColumnDrag}
       disableCardDrag={disableCardDrag}
+      isVerticalAutoScrollDisabled={isVerticalAutoScrollDisabled}
+      isHorizontalAutoScrollDisabled={isHorizontalAutoScrollDisabled}
     >
       {board}
     </BoardContainer>
