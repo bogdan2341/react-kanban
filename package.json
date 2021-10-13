@@ -1,6 +1,6 @@
 {
   "name": "@ninternal/react-kanban",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "Yet another Kanban/Trello board lib for React.",
   "main": "dist/index.js",
   "files": [
