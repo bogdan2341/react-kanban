@@ -77,6 +77,6 @@
     "dev": "cross-env NODE_ENV=cypress start-test server 8080 'cypress open'"
   },
   "dependencies": {
-    "@ninternal/react-beautiful-dnd": "^13.1.5"
+    "@ninternal/react-beautiful-dnd": "^13.1.6"
   }
 }
