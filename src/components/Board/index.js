@@ -178,6 +178,8 @@ function ControlledBoard({
     when(notifyCallback)((callback) => callback(subject, source, destination))
   }
 
+  console.log(isVerticalAutoScrollDisabled, isHorizontalAutoScrollDisabled)
+
   return (
     <BoardContainer
       onCardDragEnd={handleOnCardDragEnd}
